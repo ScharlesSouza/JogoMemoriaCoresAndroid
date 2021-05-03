@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoBimestral">
-        <activity android:name=".RankingActivity"></activity>
+        <activity android:name=".GradeCoresActivity"></activity>
+        <activity android:name=".NumerosActivity" />
+        <activity android:name=".CoresActivity" />
+        <activity android:name=".RankingActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

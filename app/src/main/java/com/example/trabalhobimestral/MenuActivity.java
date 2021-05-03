@@ -73,13 +73,13 @@ public class MenuActivity extends AppCompatActivity {
     }//abreRanking
 
     private void abreDesafioNumeros() {
-        Intent intent = new Intent(this, RankingActivity.class);
+        Intent intent = new Intent(this, NumerosActivity.class);
         intent.putExtra("nome_usuario", textViewNome.getText().toString());
         startActivity(intent);
     }//abreDesafioNumeros
 
     private void abreDesafioCores() {
-        Intent intent = new Intent(this, RankingActivity.class);
+        Intent intent = new Intent(this, CoresActivity.class);
         intent.putExtra("nome_usuario", textViewNome.getText().toString());
         startActivity(intent);
     }//abreDesafioCores

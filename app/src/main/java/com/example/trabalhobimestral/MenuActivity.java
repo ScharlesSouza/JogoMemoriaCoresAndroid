@@ -79,7 +79,8 @@ public class MenuActivity extends AppCompatActivity {
     }//abreDesafioNumeros
 
     private void abreDesafioCores() {
-        Intent intent = new Intent(this, CoresActivity.class);
+        //Intent intent = new Intent(this, CoresActivity.class);
+        Intent intent = new Intent(this, GradeCoresActivity.class);
         intent.putExtra("nome_usuario", textViewNome.getText().toString());
         startActivity(intent);
     }//abreDesafioCores

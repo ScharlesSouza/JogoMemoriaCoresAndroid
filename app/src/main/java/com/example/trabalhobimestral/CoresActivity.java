@@ -13,7 +13,7 @@ public class CoresActivity extends AppCompatActivity {
 
     private int i;
     private View view;
-    private String[] cores = {"branco", "azul", "vermelho", "verde", "preto", "amarelo", "roxo", "marrom", "laranjado"};
+    private String[] cores = {"rosa", "azul", "vermelho", "verde", "preto", "amarelo", "roxo", "marrom", "laranjado"};
     String cor;
     private Random rand = new Random();
     private TextView textViewContador;
@@ -31,12 +31,12 @@ public class CoresActivity extends AppCompatActivity {
 
     public String getCoresRand(){
         return cores[rand.nextInt(cores.length)];
-    }
+    }//getCoresRand
     public int getCoresIndice(){
 
         int indice =  rand.nextInt(cores.length);
         return indice;
-    }
+    }//getCoresIndice
 
     private void mostrarCores(){
         i=0;
@@ -56,7 +56,7 @@ public class CoresActivity extends AppCompatActivity {
                             cor = getCoresRand();
                             textViewContador.setText(""+i);
                             //textViewContador.setTextColor(getResources().getColor(R.color.preto));
-                            if(cor == "branco")
+                            if(cor == "rosa")
 
                                  view.setBackgroundColor(getResources().getColor(R.color.branco));
                             if(cor == "preto")
@@ -89,6 +89,6 @@ public class CoresActivity extends AppCompatActivity {
             }//run
         }).start();//thread
 
-    }//executaProgressBar
+    }//mostrarCores
 
 }

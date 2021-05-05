@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:layout_margin="10dp"
-    android:rowCount="3"
+    android:rowCount="4"
     android:columnCount="3"
     android:id="@+id/gridCores"
     tools:context=".GradeCoresActivity">
@@ -15,7 +15,7 @@
 
 
         <Button
-            android:id="@+id/botao1"
+            android:id="@+id/botao1Preto"
             android:layout_margin="5dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -25,6 +25,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/preto"
+            android:tag="0"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao2"
@@ -35,6 +37,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/amarelo"
+            android:tag="1"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
 
         <Button
@@ -46,6 +50,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/rosa"
+            android:tag="2"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao4"
@@ -56,6 +62,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/vermelho"
+            android:tag="3"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao5"
@@ -65,6 +73,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/verde"
+            android:tag="4"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao6"
@@ -74,6 +84,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/marrom"
+            android:tag="5"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
 
         <Button
@@ -85,6 +97,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/azul"
+            android:tag="6"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao8"
@@ -94,6 +108,8 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/laranjado"
+            android:tag="7"
+            android:onClick="cliqueBotao"
             android:textSize="14dp" />
         <Button
             android:id="@+id/botao9"
@@ -103,6 +119,20 @@
             android:layout_gravity="fill"
             android:visibility="invisible"
             android:backgroundTint="@color/roxo"
+            android:tag="8"
+            android:onClick="cliqueBotao"
+            android:textSize="14dp" />
+        <TextView
+            android:text="texto"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewContCores"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:layout_margin="5dp"
+            android:layout_rowWeight="1"
+            android:layout_row="3"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
             android:textSize="14dp" />
 
 

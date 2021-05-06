@@ -1,9 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".NumerosActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:id="@+id/gridCores"
+        tools:context=".NumerosActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextNumero"/>
+
+            <Button
+                android:text="Verificar"
+                android:id="@+id/botaoVerificar"
+                android:layout_margin="5dp"
+                android:textSize="14dp"
+                android:onClick="cliqueBotao"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/botao7"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:visibility="invisible"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/botaoListNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="50dp"
+            android:textColor="@color/preto"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/branco"/>
+
+
+        <Button
+            android:id="@+id/botao9"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_gravity="fill"
+            android:visibility="invisible"
+            android:textSize="14dp" />
+        <TextView
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/textViewListNum"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:layout_margin="5dp"
+            android:layout_rowWeight="1"
+            android:layout_row="3"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:textSize="14dp" />
+
+
+    </GridLayout>
